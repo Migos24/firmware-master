@@ -1,0 +1,109 @@
+[package]
+name = "trezor_lib"
+version = "0.1.0"
+authors = ["SatoshiLabs <info@satoshilabs.com>"]
+edition = "2021"
+build = "build.rs"
+
+[features]
+default = ["model_tt"]
+bitcoin_only = []
+model_tt = ["jpeg"]
+model_tr = []
+micropython = []
+protobuf = ["micropython"]
+ui = []
+dma2d = []
+ui_debug = []
+ui_bounds = []
+bootloader = []
+button = []
+touch = []
+clippy = []
+jpeg = []
+disp_i8080_8bit_dw = [] # write pixels directly to peripheral
+disp_i8080_16bit_dw = [] # write pixels directly to peripheral
+debug = ["ui_debug"]
+sbu = []
+sd_card = []
+rgb_led = []
+backlight = []
+test = [
+    "button",
+    "cc",
+    "debug",
+    "glob",
+    "micropython",
+    "protobuf",
+    "ui",
+    "dma2d",
+    "touch",
+    "backlight"
+]
+
+[lib]
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort"
+split-debuginfo = "off"
+debug = 2
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+lto = true
+codegen-units = 1
+split-debuginfo = "off"
+debug = 2
+
+[profile.release.package.trezor-tjpgdec]
+opt-level = 3
+
+[profile.test]
+split-debuginfo = "off"
+debug = 2
+
+[dependencies]
+qrcodegen = { version = "1.8.0", path = "../../vendor/QR-Code-generator/rust-no-heap" }
+trezor-tjpgdec = { version = "0.1.0", path = "../../../rust/trezor-tjpgdec" }
+
+# Runtime dependencies
+
+[dependencies.cty]
+version = "0.2.2"
+
+[dependencies.heapless]
+version = "0.7.3"
+default_features = false
+
+[dependencies.num-traits]
+version = "0.2.15"
+default_features = false
+
+[dependencies.num-derive]
+version = "0.3.3"
+
+[dependencies.cstr_core]
+version = "0.2.4"
+default_features = false
+
+# Build dependencies
+
+[build-dependencies.bindgen]
+version = "0.60.1"
+default_features = false
+features = ["runtime"]
+
+# Build dependencies used for linking the test binary
+
+[build-dependencies.cc]
+optional = true
+version = "1.0.69"
+
+[build-dependencies.glob]
+optional = true
+version = "0.3.0"
+
+[dev-dependencies]
+serde_json = "1.0.96"

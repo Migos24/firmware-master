@@ -1,0 +1,2726 @@
+{
+  "setup": {
+    "mnemonic": "all all all all all all all all all all all all",
+    "passphrase": ""
+  },
+  "tests": [
+    {
+      "description": "Mainnet transaction without change",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/44'/1815'/0'/0/1",
+            "prev_hash": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "Ae2tdPwUPEZCanmBz5g2GEwFqKTKpNJcGYPKfDxoNeKZ8bRHr8366kseiK2",
+            "amount": "3003112"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "73e09bdebf98a9e0f17f86a2d11e0f14f4f8dae77cdf26ff1678e821f20c8db6",
+        "witnesses": [
+          {
+            "type": 0,
+            "pub_key": "89053545a6c254b0d9b1464e48d2b5fcf91d4e25c128afb1fcfc61d0843338ea",
+            "signature": "da07ac5246e3f20ebd1276476a4ae34a019dd4b264ffc22eea3c28cb0f1a6bb1c7764adeecf56bcb0bc6196fd1dbe080f3a7ef5b49f56980fe5b2881a4fdfa00",
+            "chain_code": "26308151516f3b0e02bb1638142747863c520273ce9bd3e5cd91e1d46fe2a635"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Mainnet transaction with change",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/44'/1815'/0'/0/1",
+            "prev_hash": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "Ae2tdPwUPEZCanmBz5g2GEwFqKTKpNJcGYPKfDxoNeKZ8bRHr8366kseiK2",
+            "amount": "3003112"
+          },
+          {
+            "addressType": 8,
+            "path": "m/44'/1815'/0'/0/1",
+            "amount": "1000000"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "81b14b7e62972127eb33c0b1198de6430540ad3a98eec621a3194f2baac43a43",
+        "witnesses": [
+          {
+            "type": 0,
+            "pub_key": "89053545a6c254b0d9b1464e48d2b5fcf91d4e25c128afb1fcfc61d0843338ea",
+            "signature": "d909b16038c4fd772a177038242e6793be39c735430b03ee924ed18026bd28d06920b5846247945f1204276e4b759aa5ac05a4a73b49ce705ab0e5e54a3a170e",
+            "chain_code": "26308151516f3b0e02bb1638142747863c520273ce9bd3e5cd91e1d46fe2a635"
+          }
+        ]
+      }
+    },
+    {
+      "description": "simple transaction with base address change output",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "16fe72bb198be423677577e6326f1f648ec5fc11263b072006382d8125a6edda",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "6a78f07836dcf4a303448d2b16b217265a9226be3984a69a04dba5d04f4dbb2a47b5e1cbb345f474c0b9634a2f37b921ab26e6a65d5dfd015dacb4455fb8430a",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Mainnet transaction with multiple inputs",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/44'/1815'/0'/0/1",
+            "prev_hash": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+            "prev_index": 0
+          },
+          {
+            "path": "m/44'/1815'/0'/0/5",
+            "prev_hash": "a34dc95d806a3b206aab5e0c2aaa5ff0704f84868fe65793053f6ae9a7970979",
+            "prev_index": 0
+          },
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          },
+          {
+            "path": "m/1852'/1815'/0'/0/5",
+            "prev_hash": "33ad5e2a8f298053da804c30c9f72836bfac0a58a30aef2ff87656418b01f70b",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "Ae2tdPwUPEZCanmBz5g2GEwFqKTKpNJcGYPKfDxoNeKZ8bRHr8366kseiK2",
+            "amount": "3003112"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "7e16a0b47bdfc37abf4ddd3143f7481af07ffe7abd68f752676f5b0b2890d05b",
+        "witnesses": [
+          {
+            "type": 0,
+            "pub_key": "89053545a6c254b0d9b1464e48d2b5fcf91d4e25c128afb1fcfc61d0843338ea",
+            "signature": "ca7325ac3280708a12a70f794699243fa1c2a3e3981dccd7e5a1200f521e19fad52489c9be81e8a8ccaccd3c42d917ffd1719e6808e11fbcd1ef495f7324b10b",
+            "chain_code": "26308151516f3b0e02bb1638142747863c520273ce9bd3e5cd91e1d46fe2a635"
+          },
+          {
+            "type": 0,
+            "pub_key": "40ed7b4134e85866f55ec896a8a81e9d41c20969af8f88c532e5ad1f9c9425ab",
+            "signature": "e11444cf81b94754a15e244259d983cc3099ff04a8212dde814d6e0a9cb7e4423caa440cdee9e2d663b59e5005dbfeee8057765245b96711f1ff20caf8cfb302",
+            "chain_code": "ec19de133d3c5a598212a3b8ad9249453c4ca10e0b9228714700eeaed9445909"
+          },
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "e661d9d1002bc2f8b310e0b0541f9bb9c3357e8e6e7f772ca72fdfd4dfc27f9ae040197d4ef69c98dc16a105f00c7ff2cebf2d85920307606bff087e550b470d",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "e246aa6392958f01fc8fafd5ac1cf5f28ef34af05820b49c98919753a76109c0",
+            "signature": "517ca4c901a9cded7b4ab3b1d576f41b28a05aed9ed96ef86a78556099aaa5e996a38c74783262d807d86d48c131b1cb91cbab4ef4b6b52dc8d49708b0f40d06",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "simple transaction with base script address and change output",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1z90z7zqwhya6mpk5q929ur897g3pp9kkgalpreny8y304r2dcrtx0sf3dluyu4erzr3xtmdnzvcyfzekkuteu2xagx0qeva0pr",
+            "amount": "7120787"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "5ddbb530b8a89e2b08fc91db03950c876c4a9c1c3fb6e628c4cab638b1c97648",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "e0bdaa59016f2a521d31179b60364eacdcb53c34ae01c56b339afa62d312f5f89783579691cac777e3d5f2e7810aa8fe554ba545a8d1578c55405af5ae51b30f",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with base address change output path larger than 100",
+      "parameters": {
+        "security_checks": "prompt",
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/190'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/190'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "1fc82ce2420c173a0947eaf49af76fcd6f4e400e2bfb5fa152a482ea12dde24b",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "eae29ffe0e7b8c844036c0a3bf4c7da1106c8fd08ca908d52bb76f7c7baa5719",
+            "signature": "8049c6d62abf26a303e184be326ff941e8c123c1cba2ce83daffb12c7c0cf31379e18f7afdd877d70a0fc2a4c8b144a22a3382489f7eff9c94ec9328177d0c0e",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with base address change output staking path account larger than 100",
+      "parameters": {
+        "security_checks": "prompt",
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/190'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "abd1b24ac0638251398444ee136110f952738df32a512ce35894f8453d0e8edf",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "2de6b2f4651ad503abfb171a7ced0d88505b57a336dd3a8d2428f6584337e318f9bae2e7a0b2f76f96f5667b6c181a0e5e3e7a0592d541883893c6d43232d50f",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "simple transaction with base address change output with staking key hash",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingKeyHash": "32c728d3861e164cab28cb8f006448139c8f1740ffb8e7aa9e5232dc",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "d1610bb89bece22ed3158738bc1fbb31c6af0685053e2993361e3380f49afad9",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "622f22d03bc9651ddc5eb2f5dc709ac4240a64d2b78c70355dd62106543c407d56e8134c4df7884ba67c8a1b5c706fc021df5c4d0ff37385c30572e73c727d00",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "simple transaction with base address change output with staking script hash",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 2,
+            "path": "m/1852'/1815'/0'/0/0",
+            "scriptStakingHash": "8d7bebc7a58f1c7b5fb7c9391071ecd3b51b032695522f8c555343a9",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "1d6fc2044d54d4af5b44e4be4c1ce3670fe4d2e37523a945d087252c27b215f2",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "d301e21dccbc0cf5122629476795f993eb14160ca22a590d5e1ac3bf6996f3bd35c83646c1c8eacbb2dac3367f27e057a340aa19e77e008851274fdb19ab000f",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "simple transaction with pointer address change output",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 4,
+            "path": "m/1852'/1815'/0'/0/0",
+            "blockIndex": 1,
+            "txIndex": 2,
+            "certificateIndex": 3,
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "40535fa8f88515f1da008d3cdf544cf9dbf1675c3cb0adb13b74b9293f1b7096",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "dbbf050cc13d0696b1884113613318a275e6f0f8c7cb3e7828c4f2f3c158b2622a5d65ea247f1eed758a0f6242a52060c319d6f37c8460f5d14be24456cd0b08",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "simple transaction with enterprise address change output",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 6,
+            "path": "m/1852'/1815'/0'/0/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "d3570557b197604109481a80aeb66cd2cfabc57f802ad593bacc12eb658e5d72",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "c5996650c438c4493b2c8a94229621bb9b151b8d61d75fb868c305e917031e9a1654f35023f7dbf5d1839ab9d57b153c7f79c2666af51ecf363780397956e00a",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with stake registration certificate",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [
+          {
+            "type": 0,
+            "path": "m/1852'/1815'/0'/2/0"
+          }
+        ],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "1a3a295908afd8b2afc368071272d6964be6ee0af062bb765aea65ca454dc0c9",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "a938b16bd81aea8d3aaf11e4d460dad1f36d34bf34ad066d0f5ce5d4137654145d998c3482aa823ff1acf021c6e2cd2774fff00361cbb9e72b98632307ee4000",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with stake registration certificate (no outputs)",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [
+          {
+            "type": 0,
+            "path": "m/1852'/1815'/0'/2/0"
+          }
+        ],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "03535791d04fc1b4457fada025f1c1f7778b5c2d7fa580bbac8abd53b85d3255",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "47e6e902e81bbba5596cfabaa4f9a70f36b367e28ee81181771ccd32d38b19c1d8ae9b0afb2a79057b87f8de7862e8d2317d86246909aaa66e54445d47aa990b",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with stake registration and stake delegation certificates",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [
+          {
+            "type": 0,
+            "path": "m/1852'/1815'/0'/2/0"
+          },
+          {
+            "type": 2,
+            "path": "m/1852'/1815'/0'/2/0",
+            "pool": "f61c42cbf7c8c53af3f520508212ad3e72f674f957fe23ff0acb4973"
+          }
+        ],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "439764b5f7e08839881536a3191faeaf111e75d9f00f83b102c5c1c6fa9fcaf9",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "5ebe8eff752f07e8448f55304fdf3665ac68162099dcacd81886b73affe67fb6df401f8a5fa60ddb6d5fb65b93235e6a234182a40c001e3cf7634f82afd5fe0a",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "bc65be1b0b9d7531778a1317c2aa6de936963c3f9ac7d5ee9e9eda25e0c97c5e",
+            "signature": "0dbdf36f92bc5199526ffb8b83b33a9eeda0ed3e46fb4025a104346801afb9cf45fa1a5482e54c769f4102e67af46205457d7ae05a889fc342acb0cdc23ecd03",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with stake deregistration",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [
+          {
+            "type": 1,
+            "path": "m/1852'/1815'/0'/2/0"
+          }
+        ],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "3aca1784d151dc75bdbb80fae71bda3f4b26af3f5fd71bd5e9e9bbcdd2b64ad1",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "e563a8012e16affd801564e8410ca7b2c96f76f8ecb878e35c098a823c40be7f59dc12cb44a9b678210d4e8f18ab215133eef7ca9ece94b4683d3db0fd37e105",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "bc65be1b0b9d7531778a1317c2aa6de936963c3f9ac7d5ee9e9eda25e0c97c5e",
+            "signature": "84f321d313da67f80f7fab2e4f3996d3dbe3186659e6f98315e372dbe88c55d56f637ccc7534890c3601ddd31ba885dc86ba0074c230869f20099b7dd5eeaf00",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with stake deregistration and withdrawal",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [
+          {
+            "type": 1,
+            "path": "m/1852'/1815'/0'/2/0"
+          }
+        ],
+        "withdrawals": [
+          {
+            "path": "m/1852'/1815'/0'/2/0",
+            "amount": "1000"
+          }
+        ],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "22c67f12e6f6aa0f2f09fd27d472b19c7208ccd7c3af4b09604fd5d462c1de2b",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "7efa634e42fa844cad5f60bf005d645817cc674f30eaab0da398b99034850780b40ab5a1028da033330a0f82b01648ec92cff8ca85a072594efb298016f38d0d",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "bc65be1b0b9d7531778a1317c2aa6de936963c3f9ac7d5ee9e9eda25e0c97c5e",
+            "signature": "0202826a8b9688cf978000e7d1591582c65b149bb9f55dc883ae1acf85432618ca32be8a06fef37e69df503a294e7093006f63ababf9fcea639390226934020a",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with stake deregistration with account larger than 100",
+      "parameters": {
+        "security_checks": "prompt",
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [
+          {
+            "type": 1,
+            "path": "m/1852'/1815'/190'/2/0"
+          }
+        ],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/190'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "cc068a25994ef6a90cdab8adfbe302d6f742de9901ba2495dd64a09f2ef951f5",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "eae29ffe0e7b8c844036c0a3bf4c7da1106c8fd08ca908d52bb76f7c7baa5719",
+            "signature": "26d1381ae36a70fb08edf04445fe90f37c6ed76283f637d2239caf83e6632c2722c784e7bf41770804f0e483cdd3c68b025d8fa81d53f4fb06b16ec261271808",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "d1a07f06b872c68120def0203d0fc3d582ac4ce3897d5eaf448026960875f76d",
+            "signature": "b67d2af9de2bdfcf552f92ae12a16ed9f9cce9e34adbfe492ff75917a8a0277e125bac8f0dbdd0c4f11fd95ab6d94cb937a5b708f47ec338a00cab2931ba1403",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with auxiliary data hash",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "hash": "ea4c91860dd5ec5449f8f985d227946ff39086b17f10b5afb93d12ee87050b6a"
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "1875f1d59a53f1cb4c43949867d72bcfd857fa3b64feb88f41b78ddaa1a21cbf",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "b2015772a91043aeb04b98111744a098afdade0db5e30206538d7f2814965a5800d45240137f4d0dc81845a71e67cda38beaf816a520d73c4decbf7cbf0f6d08",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with CIP15 registration",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "payment_address_parameters": {
+              "addressType": 0,
+              "path": "m/1852'/1815'/0'/0/0",
+              "stakingPath": "m/1852'/1815'/0'/2/0"
+            },
+            "nonce": 22634813
+          }
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "839a587109358e0aa81b8fb3d5fa74665fac303425ec544a4db7f6ba4e882dff",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "187ecd899e01390272a8d8289088199b3453945fa076819b5b5df60c325c10315477cc801044dfb553e780a300d79627ef5c09e64c6f953cc33bbc59152c9002",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "a943e9166f1bb6d767b175384d3bd7d23645170df36fc1861fbf344135d8e120",
+          "cvote_registration_signature": "74f27d877bbb4a5fc4f7c56869905c11f70bad0af3de24b23afaa1d024e750930f434ecc4b73e5d1723c2cb8548e8bf6098ac876487b3a6ed0891cb76994d409"
+        }
+      }
+    },
+    {
+      "description": "transaction with CIP36 registration and voting purpose not specified",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "payment_address_parameters": {
+              "addressType": 0,
+              "path": "m/1852'/1815'/0'/0/0",
+              "stakingPath": "m/1852'/1815'/0'/2/0"
+            },
+            "nonce": 22634813,
+            "format": 1,
+            "delegations": [
+              {
+                "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 1
+              },
+              {
+                "vote_public_key": "2af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 2
+              }
+            ]
+          }
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "15e4e382d913a743776b93d730fee3ca39bfa3ee203801205333bc9aad249612",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "c984c65a5d6ee16c9cdd9fd332a5f64907f25438ef2d1e6d625bdd5c76d15acdf3e5700338b6b5c0ca30d25dd604e1b33ab5ee3459ff8ce3ca5a11e774a18605",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "9d4c00f5b5b67760931fd7ed9850ff8e14dcdf957685191ab4bc755c52f0ed56",
+          "cvote_registration_signature": "2671b8e668ffce235647ac89deda6cc222e7b31a3d44606c2723fcf711b29f9af1e30b0c6b4f87ba37ddf9f6adf0226c39c09e655255890644a3dc4e64c3a001"
+        }
+      }
+    },
+    {
+      "description": "transaction with CIP36 registration and OTHER voting purpose",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "payment_address_parameters": {
+              "addressType": 0,
+              "path": "m/1852'/1815'/0'/0/0",
+              "stakingPath": "m/1852'/1815'/0'/2/0"
+            },
+            "nonce": 22634813,
+            "format": 1,
+            "delegations": [
+              {
+                "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 1
+              }
+            ],
+            "voting_purpose": 1
+          }
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "98357cec961c4c2bfef747bb204a06945ab55077166ec4367b644882136b8b39",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "9ac45a56c7002a8bca2121b9f0bae52a7201336b7528495c22d49b845b514d93a70ca1571e8a4dd418fbf4c260018c264843e54fbd2a8c6486e8f00f93cd5103",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "28b7ffa6800833bdfe5421739eaa21d4a49cde1d84e762b147001169f7c0a385",
+          "cvote_registration_signature": "ebc00c615f988c6fc2e132d4419a719f04bbec56fe2569a00746a9e9b0d6e5bdd0809515cb2522c773c991c5ae39834403654d36b37e70b14897c0e98c8c0a0c"
+        }
+      }
+    },
+    {
+      "description": "transaction with CIP36 registration and external payment address",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "nonce": 22634813,
+            "format": 1,
+            "delegations": [
+              {
+                "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 1
+              }
+            ],
+            "payment_address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r"
+          }
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "a5c5506777fb62aa98e6c45f1c85ab9ddf706a1f199e777c43f2288a6b4fdcab",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "98e68184bc090fe95c461bd8d26b462861d382dbfce051bc9cb04a7d51c2ba293960e19ac9099c6d10912c89a3102fcd958c31e87eb9e142136b6411ab55f107",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "3830a90f2c5dc23ddd478cefcb8642f0b36afa77769239146d9cba83ed196e41",
+          "cvote_registration_signature": "ba05ac525e5dcc74e5a6cdbb7fb111d8e21163d79fe76777a5b730fe93512f09415f6f7b4904b12c6f12fe33b6c553d9889beb024299fa1256a0d3e98c8ff203"
+        }
+      }
+    },
+    {
+      "description": "transaction with CIP36 registration and non-payment payment address parameters",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "payment_address_parameters": {
+              "addressType": 14,
+              "stakingPath": "m/1852'/1815'/0'/2/0"
+            },
+            "nonce": 22634813,
+            "format": 1,
+            "delegations": [
+              {
+                "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "c5b5f451fb5992e97ab50364467348c1899a2c8972d2d79ae5893bbac37eb51f",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "54c89502160b98975364ef842d024ddca41d6d94b439be399cd48231ca27daccfcf5ba7c653240f8998327d16fb8844f4bed562a33c2a287d082e6787260e809",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "eb63742c2908aedcc6db3df903377f07302828c0e0eb4a01d38c9049845780c5",
+          "cvote_registration_signature": "97e7fd23473f984454ea6d17f8f3f4c7019fa63b87596356db89f7906bb1ce6e51c7d0efe68772d6a6cd83011b1777912cae2cc94661148af51d8f1ba791fe0d"
+        }
+      }
+    },
+    {
+      "description": "transaction with CIP36 registration and external payment address with REWARD type",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "nonce": 22634813,
+            "format": 1,
+            "delegations": [
+              {
+                "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 1
+              }
+            ],
+            "payment_address": "stake1uyfz49rtntfa9h0s98f6s28sg69weemgjhc4e8hm66d5yacalmqha"
+          }
+        },
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "c5b5f451fb5992e97ab50364467348c1899a2c8972d2d79ae5893bbac37eb51f",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "54c89502160b98975364ef842d024ddca41d6d94b439be399cd48231ca27daccfcf5ba7c653240f8998327d16fb8844f4bed562a33c2a287d082e6787260e809",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "eb63742c2908aedcc6db3df903377f07302828c0e0eb4a01d38c9049845780c5",
+          "cvote_registration_signature": "97e7fd23473f984454ea6d17f8f3f4c7019fa63b87596356db89f7906bb1ce6e51c7d0efe68772d6a6cd83011b1777912cae2cc94661148af51d8f1ba791fe0d"
+        }
+      }
+    },
+    {
+      "description": "Testnet transaction",
+      "parameters": {
+        "protocol_magic": 42,
+        "network_id": 0,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/44'/1815'/0'/0/1",
+            "prev_hash": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "2657WMsDfac7BteXkJq5Jzdog4h47fPbkwUM49isuWbYAr2cFRHa3rURP236h9PBe",
+            "amount": "3003112"
+          },
+          {
+            "address": "addr_test1vr9s8py7y68e3x66sscs0wkhlg5ssfrfs65084jrlrqcfqqtmut0e",
+            "amount": "1"
+          },
+          {
+            "addressType": 8,
+            "path": "m/44'/1815'/0'/0/1",
+            "amount": "1000000"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "47cf79f20c6c62edb4162b3b232a57afc1bd0b57c7fd8389555276408a004776",
+        "witnesses": [
+          {
+            "type": 0,
+            "pub_key": "89053545a6c254b0d9b1464e48d2b5fcf91d4e25c128afb1fcfc61d0843338ea",
+            "signature": "cc11adf81cb3c3b75a438325f8577666f5cbb4d5d6b73fa6dbbcf5ab36897df34eecacdb54c3bc3ce7fc594ebb2c7aa4db4700f4290facad9b611a035af8710a",
+            "chain_code": "26308151516f3b0e02bb1638142747863c520273ce9bd3e5cd91e1d46fe2a635"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Mary era transaction with multiasset output",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": 47,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1234",
+            "token_bundle": [
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "b7269ddc59e4094a6581c653e0d5dc1e553e3a5fb6ffae47d3d094dff1cfe87b",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "e9ab9920f24f7fdf10c90c9c1794cd9efea03dd4b3add405e5f9ffb61874d2704d376269649f8f5c57ec69b2df74fa94f73191fbeb21987b4b887743af454c06",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Mary era transaction with different policies and tokens",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": 47,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1234",
+            "token_bundle": [
+              {
+                "policy_id": "75a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "7564247542686911",
+                    "amount": "47"
+                  }
+                ]
+              },
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "456c204e69c3b16f",
+                    "amount": "1234"
+                  },
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "0b929def7bd9f44f5602f809bc0f9be30521f6b93d625525cf33b956993bfb22",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "8751e397bd9610735a92e65eab02c04aa61507f425e53c0119ddc06047bfac279439ee2bf6e0d572defa9e5649a1ea1fc2b8144041ab4970f39cd6850d4d670e",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Mary era transaction with no TTL/validity start",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": null,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "b621e22f7cb9aac1a70a3362fde88bdfd31fc100e20f3f3c24a7b853536b4f50",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "88c35c125664935117d9aa1173cae5f01967b02f6b716b1a135570b2fee74728f2f3e39d56b748302c36e2407d7bfefc4054ca1e60dd857e461734ae41d00500",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Byron to Shelley transfer",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": null,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/44'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          },
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 1
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1z90z7zqwhya6mpk5q929ur897g3pp9kkgalpreny8y304r2dcrtx0sf3dluyu4erzr3xtmdnzvcyfzekkuteu2xagx0qeva0pr",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "00d393f7fc9a8c17b3efccb44dad9d7e15fdaf2d942a3a455b52b5be016066dd",
+        "witnesses": [
+          {
+            "type": 0,
+            "pub_key": "b90fb812a2268e9569ff1172e8daed1da3dc7e72c7bded7c5bcb7282039f90d5",
+            "signature": "7782cdec14dcc5f506bb17275988771fce6ab4b744774d562c7aa120a008a9b9c28220b39382fbc8b70ef3d8a2fb2ba6aa55d732eaea1a3c71e568b387f5f40c",
+            "chain_code": "fd8e71c1543de2cdc7f7623130c5f2cceb53549055fa1f5bc88199989e08cce7"
+          },
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "8393ba106a791a55ea588a124f539a02e149cc259df703ccc29f12f2ddc2734e6a07e37d645b4d0c9cc633493cb99ed7a0057b046dc18113685a1ae6d3668608",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with ttl equal to 0",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 0,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "f4b7315ec080d05024d1f7bf6795dd234c6624970d8e272a245702de539feaa2",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "60728614d19e61dbcf5b9258b361f1e5b8d398c85f7c43ff1eff266d736826a80e3ecd038ca6d3a40609ffa3fc062581c3490068d25a799e88cf74840451540a",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with validity_interval_start equal to 0",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": 0,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "cabc87a76ad8944e8a97a7cbf9c893a77ed7d1bd963c428c3786d663adb7f0dd",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "a1f28828038757949ac319ca24bcd41d6af41ced07db20d5b6ed7392e4b6aa663ee92e873fa571a257ddeef945bee76694107da50edbd4f6c12b8654e0a22b02",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "transaction with everything set except pool registration certificate",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "d593fd793c377ac50a3169bb8378ffc257c944da31aa8f355dfa5a4f6ff89e02",
+            "prev_index": 0
+          },
+          {
+            "path": "m/1852'/1815'/0'/0/1",
+            "prev_hash": "d593fd793c377ac50a3169bb8378ffc257c944da31aa8f355dfa5a4f6ff89e02",
+            "prev_index": 0
+          },
+          {
+            "path": "m/1852'/1815'/0'/0/2",
+            "prev_hash": "d593fd793c377ac50a3169bb8378ffc257c944da31aa8f355dfa5a4f6ff89e02",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1234"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787"
+          },
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingKeyHash": "32c728d3861e164cab28cb8f006448139c8f1740ffb8e7aa9e5232dc",
+            "amount": "7120787"
+          },
+          {
+            "addressType": 4,
+            "path": "m/1852'/1815'/0'/0/0",
+            "blockIndex": 1,
+            "txIndex": 2,
+            "certificateIndex": 3,
+            "amount": "7120787"
+          },
+          {
+            "addressType": 6,
+            "path": "m/1852'/1815'/0'/0/0",
+            "amount": "7120787"
+          },
+          {
+            "addressType": 8,
+            "path": "m/44'/1815'/0'/0/1",
+            "amount": "1000000"
+          },
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1234",
+            "token_bundle": [
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  },
+                  {
+                    "asset_name_bytes": "84652474436f696e",
+                    "amount": "12321"
+                  }
+                ]
+              },
+              {
+                "policy_id": "a5a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "certificates": [
+          {
+            "type": 0,
+            "path": "m/1852'/1815'/0'/2/0"
+          },
+          {
+            "type": 2,
+            "path": "m/1852'/1815'/0'/2/0",
+            "pool": "f61c42cbf7c8c53af3f520508212ad3e72f674f957fe23ff0acb4973"
+          },
+          {
+            "type": 1,
+            "path": "m/1852'/1815'/0'/2/0"
+          }
+        ],
+        "withdrawals": [
+          {
+            "path": "m/1852'/1815'/0'/2/0",
+            "amount": "1000"
+          }
+        ],
+        "auxiliary_data": {
+          "cvote_registration_parameters": {
+            "staking_path": "m/1852'/1815'/0'/2/0",
+            "payment_address_parameters": {
+              "addressType": 0,
+              "path": "m/1852'/1815'/0'/0/0",
+              "stakingPath": "m/1852'/1815'/0'/2/0"
+            },
+            "nonce": 22634813,
+            "format": 1,
+            "delegations": [
+              {
+                "vote_public_key": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+                "weight": 1
+              }
+            ],
+            "voting_purpose": 0
+          }
+        },
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "f98e1b5edfd376356eb211103bfae679380929bf7fbc40b3355a68e98111d091",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "448d2e063f1dbc8662a9f6dea887549cbee7d8e4254124dd1aed08330f4ce165531a846b4ebc42e9944d85b99e878b4255860b960c5f4bd94d4feeb42295d402",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "36a8ef21d5b98fdf23a27325cf643deaac35e912c835e35037f23d1061ae5b16",
+            "signature": "5ba01fe1a043d3851236395a22982bfdf9d58d80ee963c042e2aa3bc0f8b35b99be18319710ade92edcf49b7185b5e8d91710f3acaa8d9e0f41bad1e3271a801",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "e90d7b0a6cf831b0042d37961dd528842860e77914e715bcece676c75353b812",
+            "signature": "5595ab117629c0a3743e7081b315d937451d546525db43b7253a76662a24100d23baeaf232dc2cccfbdd624ec3439a20a3ca0914b71df0a766ba08f444d1a60d",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "bc65be1b0b9d7531778a1317c2aa6de936963c3f9ac7d5ee9e9eda25e0c97c5e",
+            "signature": "a130822ccf92dee7a9c357432c7e4b4c6f21fc6efac9c548d00162569bc748b19384ccdf6c132d68b04526658c3766e40cef7b45f73f5398b0db946469343005",
+            "chain_code": null
+          }
+        ],
+        "auxiliary_data_supplement": {
+          "type": 1,
+          "auxiliary_data_hash": "544c9ae849c82e31224865ff936decc6160047409eee4a6b4178b729fe3d286c",
+          "cvote_registration_signature": "3064949c9f186138f95e228075d0119dd5cb50e1b7e75d24d569fa547e018a597615da7c79a39ca8e394ee1ba8acb83e70be80f37e69aef3b86e7c4a6bd44903"
+        }
+      }
+    },
+    {
+      "description": "Ordinary transaction with token minting",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": 47,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "2000000",
+            "token_bundle": [
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              },
+              {
+                "policy_id": "96a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  },
+                  {
+                    "asset_name_bytes": "75652474436f696e",
+                    "amount": "1234"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "mint": [
+          {
+            "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+            "tokens": [
+              {
+                "asset_name_bytes": "74652474436f696e",
+                "mint_amount": "7878754"
+              },
+              {
+                "asset_name_bytes": "75652474436f696e",
+                "mint_amount": "-7878754"
+              }
+            ]
+          },
+          {
+            "policy_id": "96a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+            "tokens": [
+              {
+                "asset_name_bytes": "74652474436f696e",
+                "mint_amount": "7878754"
+              },
+              {
+                "asset_name_bytes": "75652474436f696e",
+                "mint_amount": "-1234"
+              }
+            ]
+          }
+        ],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [
+          {
+            "path": "m/1855'/1815'/0'"
+          }
+        ],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "042c1d3a6eab693d2ea6b186a88aed038159e7eb581da80464bca7339fb9afe0",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "ff10637250efa74970675169585720dd5b663c49ecf523ac6214e11a74858f80ec6ef4c86ea66666ec7102fe78c92bcc4e76d50a7bff1fd9660757e94863ba09",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "b75258e4f61eb7b313d8554c2fe10673cf214ca2d762bfd53ec3b7846e2ee872",
+            "signature": "d42665ef7855bfe6898b440476ec8967f8ce786a30865a27e0c091b912b8fd87cad2f7d2f1adeb0e2a7201f2ca020a41f48fb982cb3b7f278dab848192d42e0d",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with network id included in tx body",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/44'/1815'/0'/0/1",
+            "prev_hash": "1af8fa0b754ff99253d983894e63a2b09cbb56c833ba18c3384210163f63dcfc",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "Ae2tdPwUPEZCanmBz5g2GEwFqKTKpNJcGYPKfDxoNeKZ8bRHr8366kseiK2",
+            "amount": "3003112"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": true
+      },
+      "result": {
+        "tx_hash": "4fcd4532bb0a9dfff2368e60be80d46819a92a9acfb2c64a7bf5975040789bac",
+        "witnesses": [
+          {
+            "type": 0,
+            "pub_key": "89053545a6c254b0d9b1464e48d2b5fcf91d4e25c128afb1fcfc61d0843338ea",
+            "signature": "7223909207fc1fa0c6125ffd4fbf7e1d845b7ca77078de7705aa34e4b6f416bb2efaaadfa022a91437ba4f33875b9a688f78d6fb30542b59417650a169afde01",
+            "chain_code": "26308151516f3b0e02bb1638142747863c520273ce9bd3e5cd91e1d46fe2a635"
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with output datum hash",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1w9rhu54nz94k9l5v6d9rzfs47h7dv7xffcwkekuxcx3evnqpvuxu0",
+            "amount": "1",
+            "datum_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "8ea2765f1e46d84f02d8b25a5f0cf445aaeaadcab913e17e59388a4f898ca812",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "ccc4e3c2adbf63561881212c8dffd42a02850460256da9b393aaed2cbd131fbb2798a92a2adf59c31d22e1e33c3dad011d91e09aa2d5b15ba64fa995bf241900",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with output datum hash and base address parameters",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "7120787",
+            "datum_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "b90ad6dd0e1155559bd3e66f2fce91f4c85598d47c90922f01e121ea4f51f96e",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "bce7857e140ad2edefdc2c162fe3bfadd7693337da49d0231e04ab23f837afd9a041a807ed3fb2d76fb67377d89b5af0f627cb0109a7983b4663bf8b3e8a250e",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with script address but no datum hash",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1w9rhu54nz94k9l5v6d9rzfs47h7dv7xffcwkekuxcx3evnqpvuxu0",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "06d6587ddd79e000b6922c54069b78bb931b0cba06d97ba4171f3ce6590438d2",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "4b7e694b8a31905918561eedc376aaa2f7827f19e228a9e28b5f56ee55ea61725752c50c2f1c67b79de747aeb8e5f1559ce211107a399938b954121d4c085f07",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with script data hash",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": "d593fd793c377ac50a3169bb8378ffc257c944da31aa8f355dfa5a4f6ff89e02",
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "8606e5b69b5c40bd359d7bad6ed6f77810b8e8acba6cbca298c13f92b11178d4",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "c8676cf593554f347e2d6a5ffc6a1371638156eaaddb3e7f94ae9a7488a6adb01c3660d8aff1da08e01c4899615158e69c5c797841ef7747740ab56d3b452f0c",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with a required signer",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "1"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [
+          {
+            "key_path": "m/1852'/1815'/0'/0/1"
+          }
+        ],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "8c328640f974f47cecbcaed56e46c3ba4f2ea6769e6e3528915deb3bb518aa06",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "795cde3de6c43c4cd8030d80b5eb29c8bf60c6d90a641aa86b6590fce97e920261f947a7783193faad2ad26bf8e8f1f2c2eab3ee4a56f105c0acd97b0a779d00",
+            "chain_code": null
+          },
+          {
+            "type": 1,
+            "pub_key": "36a8ef21d5b98fdf23a27325cf643deaac35e912c835e35037f23d1061ae5b16",
+            "signature": "53635fa332a154b8d345279e47d264c55533a897490016da76542fb960434afe99a759580b273e89233c45c7a2a193d7fae2e3b1181fcfba24988a045f7aea03",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with both output formats",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1w9rhu54nz94k9l5v6d9rzfs47h7dv7xffcwkekuxcx3evnqpvuxu0",
+            "amount": "1",
+            "token_bundle": [
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ],
+            "datum_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "format": 0
+          },
+          {
+            "address": "addr1w9rhu54nz94k9l5v6d9rzfs47h7dv7xffcwkekuxcx3evnqpvuxu0",
+            "amount": "1",
+            "token_bundle": [
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ],
+            "datum_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "format": 1
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "b664d33bfcbfc1b54f34c813438ab4dac788ce715a3461f85142c4d19460e949",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "e9ecd38c4c8219eca08971a6949971f3afb33e64f727e9958bfc51b42b913f445adec954d938b9bad0759740979d45f5e97da1581d1d588ff0acfbf53232e90e",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with inline datum, reference script and external address",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1w9rhu54nz94k9l5v6d9rzfs47h7dv7xffcwkekuxcx3evnqpvuxu0",
+            "amount": "1",
+            "format": 1,
+            "inline_datum": "b7",
+            "reference_script": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "719d33e1e2811f82046951dccee1a9af82d8fe1d8abc36d581a9eccc421c3204",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "57831ef649d0fd3fcda9ec218d071889dfd9296643a908101ae4a8030d053df4141b201dea9866ff63533547274db060abe7513989ab1299852b94db6236b20e",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with long inline datum, long reference script and change address",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": null,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "addressType": 0,
+            "path": "m/1852'/1815'/0'/0/0",
+            "stakingPath": "m/1852'/1815'/0'/2/0",
+            "amount": "1",
+            "format": 1,
+            "inline_datum": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "reference_script": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b73b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7b3"
+          }
+        ],
+        "mint": [],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "821e8163c5cf225c09f338f385c81e4326610f830e2abb89f9961e20741e6b70",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "563c135e4a7eddbdcdf2e34f4f18b6e6d813d150a81cdeed2290fdc4b4884e2af0a849d7191713f4a26b15ebe35cb362b6d289b4030f79128070d5a5733c8909",
+            "chain_code": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Ordinary transaction with multiple correctly ordered tokens",
+      "parameters": {
+        "protocol_magic": 764824073,
+        "network_id": 1,
+        "fee": 42,
+        "ttl": 10,
+        "validity_interval_start": 47,
+        "certificates": [],
+        "withdrawals": [],
+        "auxiliary_data": null,
+        "inputs": [
+          {
+            "path": "m/1852'/1815'/0'/0/0",
+            "prev_hash": "3b40265111d8bb3c3c608d95b3a0bf83461ace32d79336579a1939b3aad1c0b7",
+            "prev_index": 0
+          }
+        ],
+        "outputs": [
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "2000000",
+            "token_bundle": [
+              {
+                "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "f565",
+                    "amount": "9878754"
+                  },
+                  {
+                    "asset_name_bytes": "f5652474436f69",
+                    "amount": "7878754"
+                  },
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  },
+                  {
+                    "asset_name_bytes": "75652474436f696e",
+                    "amount": "1234"
+                  }
+                ]
+              },
+              {
+                "policy_id": "96a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              },
+              {
+                "policy_id": "d6a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "address": "addr1q84sh2j72ux0l03fxndjnhctdg7hcppsaejafsa84vh7lwgmcs5wgus8qt4atk45lvt4xfxpjtwfhdmvchdf2m3u3hlsd5tq5r",
+            "amount": "2000000",
+            "token_bundle": [
+              {
+                "policy_id": "a6a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+                "tokens": [
+                  {
+                    "asset_name_bytes": "74652474436f696e",
+                    "amount": "7878754"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "mint": [
+          {
+            "policy_id": "95a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+            "tokens": [
+              {
+                "asset_name_bytes": "f565",
+                "mint_amount": "9878754"
+              },
+              {
+                "asset_name_bytes": "f5652474436f69",
+                "mint_amount": "7878754"
+              },
+              {
+                "asset_name_bytes": "74652474436f696e",
+                "mint_amount": "-7878754"
+              },
+              {
+                "asset_name_bytes": "75652474436f696e",
+                "mint_amount": "-1234"
+              }
+            ]
+          },
+          {
+            "policy_id": "96a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+            "tokens": [
+              {
+                "asset_name_bytes": "74652474436f696e",
+                "mint_amount": "7878754"
+              }
+            ]
+          },
+          {
+            "policy_id": "d6a292ffee938be03e9bae5657982a74e9014eb4960108c9e23a5b39",
+            "tokens": [
+              {
+                "asset_name_bytes": "74652474436f696e",
+                "mint_amount": "7878754"
+              }
+            ]
+          }
+        ],
+        "script_data_hash": null,
+        "collateral_inputs": [],
+        "required_signers": [],
+        "collateral_return": null,
+        "total_collateral": null,
+        "reference_inputs": [],
+        "signing_mode": "ORDINARY_TRANSACTION",
+        "additional_witness_requests": [],
+        "include_network_id": false
+      },
+      "result": {
+        "tx_hash": "f1bda77315626ce61c784f3e60a74128f29b7d00a0c8baca030464293da2d7c4",
+        "witnesses": [
+          {
+            "type": 1,
+            "pub_key": "5d010cf16fdeff40955633d6c565f3844a288a24967cf6b76acbeb271b4f13c1",
+            "signature": "4254a6cae8156771ac8e1e75ceb8003f8370a7f6b08013fda32174b56025fcb01bc9d7f4e1eed10bc2c0ff1020eda47475f728cc824ef98a109fd9fe6a1c4105",
+            "chain_code": null
+          }
+        ]
+      }
+    }
+  ]
+}

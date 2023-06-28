@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+set -e
+cd $(dirname $0)/..
+
+PROTOB=common/protob
+
+# Bootloader messages cannot end up in core
+CORE_PROTOBUF_SOURCES=$(ls $PROTOB/*.proto | grep -v "bootloader")
+
+# Taking all files for python
+PYTHON_PROTOBUF_SOURCES=$PROTOB/*.proto
+
+RETURN=0
+
+do_rebuild() {
+    local FILE_OR_DIR="$1"
+    shift
+    local OUTPUT="$1"
+    shift
+    local SOURCES="$1"
+    shift
+
+    if [ "$FILE_OR_DIR" == file ]; then
+        local param="--outfile"
+    else
+        local param="--python-outdir"
+    fi
+
+    # note $SOURCES is unquoted - we want wildcard expansion and multiple args
+    $PROTOB/pb2py "$@" $param="$OUTPUT" $SOURCES
+}
+
+do_check() {
+    # rebuild protobuf in tmpdir and check result against specified directory
+    local TMPDIR=$(mktemp -d proto-check.XXXXXX)
+    trap "rm -r $TMPDIR" RETURN
+
+    local FILE_OR_DIR="$1"
+    shift
+    local OUTPUT="$1"
+    shift
+
+    if [ "$FILE_OR_DIR" == file ]; then
+        local TMPDEST="$TMPDIR/testfile"
+    else
+        cp -rT "$OUTPUT" "$TMPDIR"
+        local TMPDEST="$TMPDIR"
+    fi
+
+    do_rebuild "$FILE_OR_DIR" "$TMPDEST" "$@"
+    if ! diff -ur --exclude __pycache__ "$OUTPUT" "$TMPDEST"; then
+        RETURN=1
+    fi
+}
+
+if [ "$1" == "--check" ]; then
+    func=do_check
+else
+    func=do_rebuild
+fi
+
+$func dir core/src/trezor/enums "$CORE_PROTOBUF_SOURCES"
+$func file core/src/trezor/enums/__init__.py "$CORE_PROTOBUF_SOURCES" --template=core/src/trezor/enums/_proto_init.mako
+$func file core/src/trezor/messages.py "$CORE_PROTOBUF_SOURCES" --template=core/src/trezor/_proto_messages.mako
+
+$func file python/src/trezorlib/messages.py "$PYTHON_PROTOBUF_SOURCES" \
+    --template=python/src/trezorlib/_proto_messages.mako \
+    --include-deprecated
+
+exit $RETURN
