@@ -1,7 +1,7 @@
 # License
 
-This is a monorepo and different parts of monorepo are licensed
-under different licenses:
+(This is a monorepo and different parts of monorepo are licensed
+under different licenses):
 
 * `common` - [LGPLv3](common/COPYING)
 * `core` - [GPLv3](core/COPYING)
